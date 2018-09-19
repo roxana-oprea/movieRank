@@ -1,0 +1,31 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+*.db
+.env*
+!.env.example
+*.log
+
+# Idea
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/dataSources.xml
+.idea/dataSources.ids
+.idea/*.ipr
+.idea/*.iws
+.idea/shelf
+.idea/httpRequests
+
+# Visual Studio Code
+.vscode
