@@ -167,11 +167,21 @@ span {
   border-radius: 50px;
   background-color: #922c88;
   color: white;
-  box-shadow: 0 0 0 0.2rem rgba(196, 28, 255, 0.93);
+  box-shadow: 0 0 0 0.1rem rgba(196, 28, 255, 0.93);
 }
 
 .btn-outline-primary.focus, .btn-outline-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(196, 28, 255, 0.93);
+  box-shadow: 0 0 0 0.1rem rgba(196, 28, 255, 0.93);
+}
+
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #922c88;
+  border-color: #922c88;
+}
+
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(196, 28, 255, 0.93);
 }
 
 /* search */
