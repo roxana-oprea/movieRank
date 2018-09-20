@@ -184,6 +184,12 @@ span {
   box-shadow: 0 0 0 0.1rem rgba(196, 28, 255, 0.93);
 }
 
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #922c88;
+}
+
 /* search */
 .search {
   border-radius: 50px;
