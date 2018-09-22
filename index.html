@@ -34,7 +34,7 @@
     </li>
     <li class="nav-item">
       <a class="nav-link p-2" href="" target="_blank" rel="noopener" aria-label="Slack">
-        <span class="mr-2">Sara Korleone</span>
+        <span class="mr-2">Sara Robinson</span>
         <img src="images/profile.jpg" alt="Image profile" class="image-profile">
       </a>
     </li>
@@ -48,10 +48,6 @@
       <nav class="bd-links">
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action">
-            <i class="flaticon-home"></i><br>
-            <span class="ml-3">Home</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action">
             <i class="flaticon-video-camera"></i><br>
             <span class="ml-3">Movies</span>
           </a>
@@ -60,8 +56,16 @@
             <span class="ml-3">Stars</span>
           </a>
           <a href="#" class="list-group-item list-group-item-action">
-            <i class="flaticon-login"></i><br>
-            <span class="ml-3">Login</span>
+            <i class="flaticon-home"></i><br>
+            <span class="ml-3">Directors</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="flaticon-rating"></i><br>
+            <span class="ml-3">Charts</span>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <i class="flaticon-group"></i><br>
+            <span class="ml-3">Share</span>
           </a>
         </div>
       </nav>
@@ -77,18 +81,20 @@
           <th scope="col">Genre</th>
           <th scope="col">Director</th>
           <th scope="col">Year</th>
+          <th scope="col">Seen</th>
         </tr>
         </thead>
         <tbody>
         <tr>
           <td>
-            <img src="/images/first.jpg" alt="First movie" class="mr-2">
+            <img src="/images/first.jpg" alt="First movie" class="mr-2"><br>
             <span>Star Wars</span>
           </td>
           <td>9.2</td>
           <td> Action, Adventure, Fantasy</td>
           <td>Rian Johnson</td>
           <td> 2017</td>
+          <td><input type="checkbox"></td>
         </tr>
         <tr>
           <td>
@@ -99,6 +105,7 @@
           <td>Crime, Drama</td>
           <td>Francis Ford Coppola</td>
           <td>1972</td>
+          <td><input type="checkbox"></td>
         </tr>
         <tr>
           <td>
@@ -109,6 +116,7 @@
           <td> Action, Crime, Drama</td>
           <td>Frank Darabont</td>
           <td>2008</td>
+          <td><input type="checkbox"></td>
         </tr>
         </tbody>
       </table>
@@ -136,7 +144,7 @@
       <button class="btn btn-outline-primary mb-5 btn-block">Add New</button>
       <div>
         <label for="search">
-          <input type="search" name="search" class="form-control mb-5 search" placeholder="Search..."/>
+          <input type="search" name="search" id="search" class="form-control mb-5 search" placeholder="Search movie..."/>
         </label>
       </div>
       <button class="btn btn-outline-primary mb-5 btn-block">Delete</button>
@@ -163,5 +171,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.bundle.min.js"
         integrity="sha384-lZmvU/TzxoIQIOD9yQDEpvxp6wEU32Fy0ckUgOH4EIlMOCdR823rg4+3gWRwnX1M"
         crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

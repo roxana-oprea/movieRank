@@ -95,6 +95,14 @@ body {
   font-size: 50px;
 }
 
+.flaticon-rating:after, .flaticon-rating:before {
+  font-size: 50px;
+}
+
+.flaticon-group:after, .flaticon-group:before {
+  font-size: 50px;
+}
+
 .flaticon-maintenance, .flaticon-envelope {
   color: #6c757d;
 }
@@ -180,7 +188,7 @@ span {
   border-color: #922c88;
 }
 
-.show>.btn-outline-primary.dropdown-toggle:focus {
+.show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.1rem rgba(196, 28, 255, 0.93);
 }
 
