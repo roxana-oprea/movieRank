@@ -1,34 +1,37 @@
 (function () {
   'use strict';
 
-  // populate table
-  function populateTable() {
+  function renderMovies(movies) {
+    // references
     const templateElement = document.querySelector('#movie-row');
     const tbodyElement = document.querySelector('tbody');
 
+    for (let movie of movies) {
+      let clone = document.importNode(templateElement.content, true);
+      let cells = clone.querySelector('tr').cells;
+
+      cells[0].textContent = movie.name;
+      cells[1].textContent = movie.imdbRating;
+      cells[2].textContent = movie.genre;
+      cells[3].textContent = movie.director;
+      cells[4].textContent = movie.year;
+      cells[5].checked = movie.seen;
+
+      tbodyElement.appendChild(clone);
+    }
+  }
+
+  // populate table
+  function populateTable() {
 
     fetch('http://localhost:3000/movies').then(response => response.json()).then(movies => {
-
-      for (let movie of movies) {
-        let clone = document.importNode(templateElement.content, true);
-        let tdElements = clone.querySelectorAll('td');
-
-        tdElements[0].textContent = movie.name;
-        tdElements[1].textContent = movie.imdbRating;
-        tdElements[2].textContent = movie.genre;
-        tdElements[3].textContent = movie.director;
-        tdElements[4].textContent = movie.year;
-        tdElements[5].textContent = movie.seen;
-
-        tbodyElement.appendChild(clone);
-      }
+      renderMovies(movies);
     });
-
   }
 
   populateTable();
 
-  // get references
+  // references
   const searchElement = document.querySelector('#search');
   const tableElement = document.querySelector('table');
 
@@ -45,6 +48,16 @@
       row.hidden = !isMatch;
     }
   }
+
+  // pagination - jQuery
+
+  $('.pagination').twbsPagination({
+    totalPages: 3,
+    visiblePages: 3,
+    firstClass: 'd-none',
+    lastClass: 'd-none',
+    prev: 'Back',
+  });
 
 
 })();

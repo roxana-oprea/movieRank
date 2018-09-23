@@ -5,64 +5,64 @@
       "imdbRating": "9.3",
       "genre": "Drama",
       "director": "Frank Darabont",
-      "year": "1994",
-      "seen": "true"
+      "year": 1994,
+      "seen": true
     },
     {
       "name": "The Godfather",
       "imdbRating": "9.2",
       "genre": "Crime, Drama",
       "director": "Francis Ford Coppola",
-      "year": "1972",
-      "seen": "true"
+      "year": 1972,
+      "seen": true
     },
     {
       "name": "The Godfather: Part 2",
       "imdbRating": "9.0",
       "genre": "Crime, Drama",
       "director": "Francis Ford Coppola",
-      "year": "1974",
-      "seen": "false"
+      "year": 1974,
+      "seen": false
     },
     {
       "name": " The Dark Knight",
       "imdbRating": "9.0",
       "genre": "Action, Crime, Drama",
       "director": "Frank Darabont",
-      "year": "2008",
-      "seen": "false"
+      "year": 2008,
+      "seen": false
     },
     {
       "name": "12 Angry Men",
       "imdbRating": "8.9",
       "genre": "Crime, Drama",
       "director": "Sidney Lumet",
-      "year": "1957",
-      "seen": "true"
+      "year": 1957,
+      "seen": true
     },
     {
       "name": "Schindler's List",
       "imdbRating": "8.9",
       "genre": "Biography, Drama, History",
       "director": "Steven Spielberg",
-      "year": "1993",
-      "seen": "true"
+      "year": 1993,
+      "seen": true
     },
     {
       "name": "The Lord of the Rings: The Return of the King",
       "imdbRating": "8.9",
       "genre": " Action, Adventure, Drama",
       "director": " Peter Jackson",
-      "year": "2003",
-      "seen": "true"
+      "year": 2003,
+      "seen": true
     },
     {
       "name": "Pulp Fiction",
       "imdbRating": "8.9",
       "genre": "Crime, Drama",
       "director": "Quentin Tarantino",
-      "year": "1994",
-      "seen": "true"
+      "year": 1994,
+      "seen": true
     }
   ]
 }
